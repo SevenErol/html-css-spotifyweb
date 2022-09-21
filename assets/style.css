@@ -20,7 +20,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.container {
+.wrapper {
     height: 100vh;
 }
 
@@ -222,6 +222,8 @@ ul li a {
     background-color: var(--main-bg);
 }
 
+/* #region notehead */
+
 .notehead {
     background-color: var(--lightdark-bg);
     padding: 2rem;
@@ -239,6 +241,10 @@ ul li a {
     transition: 0.4s;
     cursor: pointer;
 }
+
+/* #endregion notehead */
+
+/* #region nav */
 
 #site_nav,
 .directory {
@@ -265,5 +271,36 @@ ul li a {
     color: white;
     cursor: pointer;
     transition: 0.4s;
+}
+
+/* #endregion nav */
+
+.container h2 {
+    padding: 0.5rem 1rem;
+    color: var(--white-text);
+    margin-bottom: 1rem;
+}
+
+.card {
+    width: calc((100% / 12) * 2);
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.card img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.card h4 {
+    color: var(--white-text);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: var(--grey-text);
+    font-size: 14px;
+    font-style: italic;
 }
 
