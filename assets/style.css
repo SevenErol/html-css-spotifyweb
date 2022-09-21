@@ -83,7 +83,7 @@ a {
 
 
 /* #region column left */
-.col_2 {
+.wrapper .col_2 {
     background-color: var(--black-bg);
     display: flex;
     flex-direction: column;
@@ -93,6 +93,7 @@ a {
     top: 0;
     height: 100%;
     z-index: 1000;
+    width: calc((100vw / 12) * 2);
 }
 
 .image img,
@@ -281,6 +282,10 @@ ul li a {
     margin-bottom: 1rem;
 }
 
+.container .row {
+    margin-bottom: 1rem;
+}
+
 .card {
     width: calc((100% / 12) * 2);
     padding: 0.5rem 1rem;
@@ -293,7 +298,7 @@ ul li a {
     margin-bottom: 0.5rem;
 }
 
-.card h4 {
+.container h4 {
     color: var(--white-text);
     margin-bottom: 0.5rem;
 }
@@ -302,5 +307,11 @@ ul li a {
     color: var(--grey-text);
     font-size: 14px;
     font-style: italic;
+}
+
+.container p {
+    color: var(--grey-text);
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem ;
 }
 
