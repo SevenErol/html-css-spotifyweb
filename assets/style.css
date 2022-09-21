@@ -11,6 +11,7 @@
     --green-selected: #7EAA2B;
     --black-bg: black;
     --white-text: white;
+    --main-bg: #141922;
 }
 
 /* #region utilities */
@@ -200,9 +201,7 @@ ul li a {
     vertical-align: middle; 
 }
 
-.selected:focus,
-.search:focus,
-.library:focus {
+.col_2 .selected:focus {
     border-left: 6px solid var(--green-selected);
     color: var(--white-text);
 }
@@ -220,6 +219,7 @@ ul li a {
 
 .col_10 {
     margin-left: calc((100vw / 12) * 2);
+    background-color: var(--main-bg);
 }
 
 .notehead {
@@ -239,3 +239,31 @@ ul li a {
     transition: 0.4s;
     cursor: pointer;
 }
+
+#site_nav,
+.directory {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    padding: 1rem;
+    color: var(--grey-text);
+}
+
+.directory .selected {
+    margin-bottom: 0;
+}
+
+.directory .selected:focus {
+    border-bottom: 5px solid var(--green-selected);
+    color: white;
+} 
+
+
+.link:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
