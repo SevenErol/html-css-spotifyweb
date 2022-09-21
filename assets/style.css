@@ -63,6 +63,10 @@ a {
     width: calc((100% / 12) * 9);
 }
 
+.col_10 {
+    width: calc((100% / 12) * 10);
+}
+
 .col_12 {
     width: calc((100% / 12) * 12);
     height: 100%;
@@ -70,12 +74,14 @@ a {
 
 
 .btn {
-    border: 1px solid black;
-    border-radius: 16px;
+    border: 1px solid var(--white-text);
+    border-radius: 20px;
 }
 
 /* #endregion utilities */
 
+
+/* #region column left */
 .col_2 {
     background-color: var(--black-bg);
     display: flex;
@@ -85,6 +91,7 @@ a {
     left: 0;
     top: 0;
     height: 100%;
+    z-index: 1000;
 }
 
 .image img,
@@ -198,4 +205,37 @@ ul li a {
 .library:focus {
     border-left: 6px solid var(--green-selected);
     color: var(--white-text);
+}
+
+
+.col_2 li a:hover {
+    color: var(--white-text);
+    transition: 0.4s;
+    cursor:pointer
+}
+/* #endregion column */
+
+/* #region column right */
+
+
+.col_10 {
+    margin-left: calc((100vw / 12) * 2);
+}
+
+.notehead {
+    background-color: var(--lightdark-bg);
+    padding: 2rem;
+    text-align: end;
+}
+
+.upgrade {
+    color: var(--white-text);
+    padding: 0.5rem 2rem;
+}
+
+.upgrade:hover {
+    color: var(--lightdark-bg);
+    background-color: var(--white-text);
+    transition: 0.4s;
+    cursor: pointer;
 }
