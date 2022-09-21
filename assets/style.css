@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightdark-bg: #080B12;
+    --add-bg: #A3A3A3;
+    --grey-text: #5F5F5F;
+    --green-selected: #7EAA2B;
+}
+
+/* #Region utilities */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
