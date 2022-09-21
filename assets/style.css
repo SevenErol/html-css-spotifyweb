@@ -221,6 +221,7 @@ ul li a {
 .col_10 {
     margin-left: calc((100vw / 12) * 2);
     background-color: var(--main-bg);
+    padding-top: 7%;
 }
 
 /* #region notehead */
@@ -229,6 +230,11 @@ ul li a {
     background-color: var(--lightdark-bg);
     padding: 2rem;
     text-align: end;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    width: calc((100vw / 12) * 10);
 }
 
 .upgrade {
@@ -276,10 +282,13 @@ ul li a {
 
 /* #endregion nav */
 
+/* #region rows */
+
 .container h2 {
     padding: 0.5rem 1rem;
     color: var(--white-text);
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .container .row {
@@ -314,4 +323,12 @@ ul li a {
     margin-bottom: 1rem;
     padding: 0.5rem 1rem ;
 }
+
+.popular img {
+    border-radius: 50%;
+}
+
+/* #endregion rows */
+
+/* #endregion column right */
 
