@@ -90,7 +90,8 @@ a {
     flex-direction: column;
     justify-content: space-between;
     height: calc(100vh - 80px);
-    padding: 0rem 1rem;
+    width: 200px;
+    overflow-y: auto;
 }
 
 .image img,
@@ -102,7 +103,7 @@ a {
 .col_2 p,
 .playlist_section,
 .install_account {
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
 .col_2 h4,
@@ -242,6 +243,7 @@ ul li a {
 
 .col_10 {
     background-color: var(--main-bg);
+    width: 100%;
 }
 
 /* #region notehead */
@@ -395,6 +397,7 @@ ul li a {
     background-color: var(--footer-bg);
     height: 80px;
     padding: 0.5rem;
+    display: block;
 }
 
 #site_footer .col_3 {
@@ -527,7 +530,6 @@ ul li a {
     transition: 0.4s;
     color: var(--green-selected);
     cursor: pointer;
-    font-size: 26px;
 }
 
 .hearing {
@@ -551,4 +553,14 @@ ul li a {
 .hearing:hover i {
     display: block;
     color: var(--white-text);
+}
+
+@media screen and (max-width: 1100px) {
+    .card {
+        width: calc((100% / 12) * 3)
+    }
+
+    .albums .row {
+        flex-wrap: wrap;
+    }
 }
