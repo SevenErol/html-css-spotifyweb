@@ -155,6 +155,18 @@ a {
     transform: translate(-50%, -50%);
 }
 
+.add_playlist:hover .plus {
+    background-color: var(--white-text);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.add_playlist:hover p {
+    color: var(--white-text);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
 ul li {
     margin-bottom: 0.5rem;
 }
@@ -183,6 +195,12 @@ ul li a {
 
 .arrow img {
     vertical-align: middle;
+}
+
+.install_account a:hover {
+    cursor: pointer;
+    transition: 0.4s;
+    color: var(--white-text);
 }
 
 .profile {
@@ -342,6 +360,7 @@ ul li a {
 
 .card_img:hover i {
     opacity: 1;
+    cursor: pointer;
 }
 
 .content h4 {
@@ -479,7 +498,57 @@ ul li a {
     color: var(--white-text);
 }
 
-.album_name p,
+.album_name h6:hover {
+    font-size: 12px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.album_name a,
 .heart_and_folder i {
     color: var(--grey-text);
+}
+
+.album_name a:hover {
+    text-decoration: underline;
+    color: var(--white-text);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.heart_and_folder i:hover {
+    transition: 0.4s;
+    color: var(--white-text);
+    cursor: pointer;
+}
+
+.foot_center i:hover,
+.foot_right i:hover {
+    transition: 0.4s;
+    color: var(--green-selected);
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.hearing {
+    position: relative;
+}
+
+.hearing i {
+    position: absolute;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    display: none;
+}
+
+.hearing:hover {
+    background-color: var(--green-selected);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.hearing:hover i {
+    display: block;
+    color: var(--white-text);
 }
