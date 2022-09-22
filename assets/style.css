@@ -412,12 +412,14 @@ ul li a {
 }
 
 .foot_left,
-.foot_center,
 .foot_right {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     height: 100%;
+}
+
+.foot_center {
+    flex-wrap: wrap;
 }
 
 .foot_left .foot_album,
@@ -466,11 +468,14 @@ ul li a {
 }
 
 .listened_time,
-.total_time,
+.total_time {
+    width: calc((100% / 12) * 1);
+}
+
 .icon_menu,
 .icon_screen,
 .volume_icon {
-    width: calc((100% / 12) * 1);
+    width: calc((100% / 12) * 2);
 }
 
 .listened_bar {
@@ -555,6 +560,8 @@ ul li a {
     color: var(--white-text);
 }
 
+/* #endregion footer */
+
 @media screen and (max-width: 1100px) {
     .card {
         width: calc((100% / 12) * 3)
@@ -564,3 +571,18 @@ ul li a {
         flex-wrap: wrap;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: calc((100% / 12) * 6);
+    }
+
+    .albums .row {
+        flex-wrap: wrap;
+    }
+
+    .directory {
+        flex-wrap: wrap;
+    }
+}
+
