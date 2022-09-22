@@ -88,12 +88,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    z-index: 1000;
-    width: calc((100vw / 12) * 2);
+    height: calc(100vh - 80px);
+    padding: 0rem 1rem;
 }
 
 .image img,
@@ -128,7 +124,6 @@ a {
 .add_playlist {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
 }
 
 .home_img,
@@ -160,7 +155,7 @@ a {
 }
 
 ul li {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.5rem;
 }
 
 ul li a {
@@ -176,7 +171,7 @@ ul li a {
 .install_flex {
     padding-bottom: 1rem;
     border-bottom:1px solid var(--grey-text);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .arrow {
@@ -217,11 +212,12 @@ ul li a {
 
 /* #region column right */
 
+.content {
+    overflow-y: auto;
+}
 
 .col_10 {
-    margin-left: calc((100vw / 12) * 2);
     background-color: var(--main-bg);
-    padding-top: 7%;
 }
 
 /* #region notehead */
@@ -230,11 +226,7 @@ ul li a {
     background-color: var(--lightdark-bg);
     padding: 2rem;
     text-align: end;
-    position: fixed;
-    z-index: 999;
-    right: 0;
-    top: 0;
-    width: calc((100vw / 12) * 10);
+    height: 70px;
 }
 
 .upgrade {
@@ -284,14 +276,15 @@ ul li a {
 
 /* #region rows */
 
-.container h2 {
+
+.content h2 {
     padding: 0.5rem 1rem;
     color: var(--white-text);
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
-.container .row {
+.content .row {
     margin-bottom: 1rem;
 }
 
@@ -307,7 +300,7 @@ ul li a {
     margin-bottom: 0.5rem;
 }
 
-.container h4 {
+.content h4 {
     color: var(--white-text);
     margin-bottom: 0.5rem;
 }
@@ -318,7 +311,7 @@ ul li a {
     font-style: italic;
 }
 
-.container p {
+.content p {
     color: var(--grey-text);
     margin-bottom: 1rem;
     padding: 0.5rem 1rem ;
@@ -332,3 +325,86 @@ ul li a {
 
 /* #endregion column right */
 
+/* #region footer */
+
+#site_footer {
+    background-color: var(--add-bg);
+    height: 80px;
+    padding: 0.5rem;
+}
+
+#site_footer .col_3 {
+    display: flex;
+    align-items: center;
+}
+
+#site_footer .col_6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foot_left,
+.foot_center,
+.foot_right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.foot_left .foot_album,
+.foot_left .album_name,
+.foot_left .heart_and_folder {
+    width: calc((100% / 12) * 2);
+    margin-right: 1rem
+}
+
+.foot_center .actions,
+.foot_center .listening_time {
+    width: calc((100% / 12) * 12);
+    display: flex;
+    justify-content: center;
+}
+
+.foot_center .actions {
+    gap: 40px;
+}
+
+.foot_center .listening_time {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot_right {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.actions i {
+    font-size: 24px;
+    color: var(--white-text);
+}
+
+.listening_time {
+    color: var(--white-text);
+}
+
+.listened_time,
+.total_time,
+.icon_menu,
+.icon_screen,
+.volume_icon {
+    width: calc((100% / 12) * 1);
+}
+
+.listened_bar {
+    width: calc((100% / 12) * 8);
+    height: 3px;
+    background-color: violet;
+}
+
+.volume_bar {
+    width: calc((100% / 12) * 5);
+    height: 3px;
+    background-color: violet;
+}
