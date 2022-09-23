@@ -94,6 +94,10 @@ a {
     overflow-y: auto;
 }
 
+.hidden_img {
+    display: none;
+}
+
 .image img,
 .home_img,
 .lens_img,
@@ -344,7 +348,7 @@ ul li a {
     opacity: 0;
 }
 
-.card_img:hover .overlay{
+.card_img:hover .overlay {
     opacity: 1;
     cursor: pointer;
     transition: 0.4s;
@@ -408,7 +412,7 @@ ul li a {
 #site_footer .col_6 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .foot_left,
@@ -586,3 +590,53 @@ ul li a {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .wrapper .col_2 {
+        width: 30px;
+    }
+
+    .name_opt {
+        display: none;
+    }
+
+    .image>img {
+        display: none;
+    }
+
+    .home_img,
+    .lens_img,
+    .library_img,
+    .arrow,
+    .profile {
+        width: 100%;
+        margin: 0;
+    }
+
+    .image .hidden_img {
+        display: inline-block;
+        width: 30px;
+    }
+
+    .playlist_section,
+    .install_account p,
+    .install_account h4 {
+        display: none;
+    }
+
+    .album_name {
+        display: none;
+    }
+
+    .foot_left .foot_album {
+        width: 100%;
+    }
+
+    .icon_screen,
+    .volume_bar {
+        display: none;
+    }
+
+    .foot_right {
+        gap: 20px;
+    }
+}
